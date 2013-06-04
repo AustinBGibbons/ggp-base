@@ -26,22 +26,22 @@ you can use to investigate the game being player:
     getLegalMoves(state, role) are the legal moves for <role> in <state>.
 
   * Some states are terminal, and in those states "goal" values are defined
-      for every player, indicating whether they won or lost.
-        isTerminal(state) indicates whether a state is terminal.
-        getGoal(state, role) is the goal value for <role> in <state>.
+    for every player, indicating whether they won or lost.
+    isTerminal(state) indicates whether a state is terminal.
+    getGoal(state, role) is the goal value for <role> in <state>.
 
-    * Given a legal move for each player, you can transition from one state to
-      the next state, after the players make their respective moves.
-        getNextState(state, moves) is the result of making <moves> at <state>.
+  * Given a legal move for each player, you can transition from one state to
+    the next state, after the players make their respective moves.
+    getNextState(state, moves) is the result of making <moves> at <state>.
 
-    A simple Prover-based state machine implementation is included in GGP Base,
+A simple Prover-based state machine implementation is included in GGP Base,
 so you don't need to worry about the details of converting a game description
 into a state machine. To write a gamer based on StateMachineGamer, derive your
 class from players.gamer.statemachine.StateMachineGamer. Applications like the
 PlayerPanel should automatically recognize your new class and it should appear
 in their lists of available players right away.
 
-    For examples of simple players, see src/player/gamer/statemachine/reflex,
+For examples of simple players, see src/player/gamer/statemachine/reflex,
 where two extremely simple "reflex-based" players are included: LegalGamer and
 RandomGamer. LegalGamer always chooses the first legal move available, and the
 RandomGamer always chooses a random legal move.
