@@ -12,7 +12,7 @@ Support code for the above.
 QUICK START GUIDE
 =================
 
-    Getting started is as simple as writing a new player that inherits from the
+Getting started is as simple as writing a new player that inherits from the
 StateMachineGamer class. StateMachineGamer is based on the state machine view
 of general game playing, in which playing a game is represented as proceeding
 through a state machine. The underlying state machine, which you can access via
